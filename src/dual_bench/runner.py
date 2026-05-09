@@ -29,9 +29,14 @@ from typing import Any, Callable, List, Optional, Tuple
 import numpy as np
 
 from dual_bench.formulations import (
-    BiobjFormulation, BiobjRestFormulation,
-    CMOPEnvelope, CMOPFull, CMOPStandard,
-    ManyobjFormulation, ManyobjRestFormulation, MOFormulation,
+    BiobjFormulation,
+    BiobjRestFormulation,
+    CMOPEnvelope,
+    CMOPFull,
+    CMOPStandard,
+    ManyobjFormulation,
+    ManyobjRestFormulation,
+    MOFormulation,
 )
 from dual_bench.problems.base import CMOProblem, DualProblem
 
@@ -160,6 +165,7 @@ def _create_algorithm(formulation, algorithm_factory: Callable):
 def _run_pymoo(formulation, algorithm_obj, nfe: int):
     """Execute a pymoo run and return ``(F, G, X, nfe_actual)``."""
     from pymoo.optimize import minimize as pymoo_minimize
+
     from dual_bench.engines.pymoo_engine import EpsilonCallback, ToPymoo
 
     pymoo_prob = ToPymoo(formulation)

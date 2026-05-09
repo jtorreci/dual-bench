@@ -72,9 +72,11 @@ def summary_table(
     for r in results:
         rv, cv = str(r[rows]), str(r[cols])
         if rv not in seen_r:
-            row_labels.append(rv); seen_r.add(rv)
+            row_labels.append(rv)
+            seen_r.add(rv)
         if cv not in seen_c:
-            col_labels.append(cv); seen_c.add(cv)
+            col_labels.append(cv)
+            seen_c.add(cv)
 
     lookup = {(str(r[rows]), str(r[cols])): r.get(metric, float("nan")) for r in results}
 

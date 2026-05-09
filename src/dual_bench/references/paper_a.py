@@ -18,7 +18,7 @@ Two levels of aggregation are provided:
 
 from __future__ import annotations
 
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, Optional, Tuple
 
 # ======================================================================
 # Constants
@@ -42,7 +42,10 @@ ENGINE = "Platypus"
 # Each value: (hv_mean, hv_std, df_mean, df_std, n)
 # df_mean/df_std = None when no feasible solution was found in any rep.
 
-_BY_ALGORITHM: Dict[Tuple[str, str, str], Tuple[float, float, Optional[float], Optional[float], int]] = {
+_BY_ALGORITHM: Dict[
+    Tuple[str, str, str],
+    Tuple[float, float, Optional[float], Optional[float], int],
+] = {
     # --- Spring ---
     ("Spring", "MO", "NSGAII"):      (0.6903, 0.0107, 0.0837, 0.1059, 20),
     ("Spring", "MO", "GDE3"):        (0.7114, 0.0085, 0.0479, 0.0374, 20),

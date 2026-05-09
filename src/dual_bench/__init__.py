@@ -11,6 +11,9 @@ __version__ = "1.1.0"
 
 # --- Problems ---
 # --- Engine result type ---
+# --- References (lazy import to keep startup fast) ---
+# --- Analysis (lazy -- requires scipy) ---
+from dual_bench import analysis, references
 from dual_bench.engines.base import Solution
 
 # --- Formulations ---
@@ -39,17 +42,11 @@ from dual_bench.problems.cmop import CMOP_REGISTRY
 # --- Suites ---
 from dual_bench.problems.suites import list_suites, suite
 
-# --- Schedules ---
-from dual_bench.schedules import epsilon_exp, epsilon_lin, epsilon_pow
-
-# --- References (lazy import to keep startup fast) ---
-from dual_bench import references
-
 # --- Runner ---
 from dual_bench.runner import ExperimentConfig, RunResult, run_experiment, run_single
 
-# --- Analysis (lazy -- requires scipy) ---
-from dual_bench import analysis
+# --- Schedules ---
+from dual_bench.schedules import epsilon_exp, epsilon_lin, epsilon_pow
 
 __all__ = [
     # Version

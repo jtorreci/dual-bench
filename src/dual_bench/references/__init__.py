@@ -20,7 +20,11 @@ Quick access
 from dual_bench.references.optima import info, list_problems, optimum
 from dual_bench.references.paper_a import (
     by_algorithm as paper_a_by_algorithm,
+)
+from dual_bench.references.paper_a import (
     by_formulation as paper_a_by_formulation,
+)
+from dual_bench.references.paper_a import (
     experimental_setup as paper_a_setup,
 )
 
