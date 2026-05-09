@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "dual-bench: A Benchmark Library for Constrained Optimization via Demand-to-Capacity Ratios"
+type: software
+authors:
+  - family-names: Torrecilla-Pinero
+    given-names: Jesus A.
+    email: jtorreci@unex.es
+    affiliation: Universidad de Extremadura
+    orcid: "https://orcid.org/0000-0001-9406-1100"
+  - family-names: Ceballos-Martinez
+    given-names: Jose M.
+    email: jmceba@unex.es
+    affiliation: Universidad de Extremadura
+    orcid: "https://orcid.org/0000-0002-9951-4751"
+  - family-names: Gomez Pulido
+    given-names: Juan Antonio
+    email: jangomez@unex.es
+    affiliation: Universidad de Extremadura
+    orcid: "https://orcid.org/0000-0002-0441-9402"
+version: 1.1.0
+date-released: "2026-03-27"
+license: MIT
+repository-code: "https://github.com/jtorreci/dual-bench"
+keywords:
+  - constrained optimization
+  - benchmark
+  - demand-to-capacity ratio
+  - multi-objective optimization
+  - MOEA
